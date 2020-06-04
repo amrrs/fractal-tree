@@ -18,11 +18,11 @@ def fractal(x):
         return
     else:
         t.forward(x)
-        t.right(30)
-        tree(x*0.7)
-        t.left(60)
-        tree(x*0.7)
-        t.right(30)
+        t.left(30)
+        fractal(x*0.7)
+        t.right(60)
+        fractal(x*0.7)
+        t.left(30)
         t.back(x)
 
     
